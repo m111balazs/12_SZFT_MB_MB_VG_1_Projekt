@@ -1,0 +1,14 @@
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\Project_Rabbit_Fox.exe
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\Project_Rabbit_Fox.deps.json
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\Project_Rabbit_Fox.runtimeconfig.json
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\Project_Rabbit_Fox.dll
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\Project_Rabbit_Fox.pdb
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\Project_Rabbit_Fox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\Project_Rabbit_Fox.AssemblyInfoInputs.cache
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\Project_Rabbit_Fox.AssemblyInfo.cs
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\Project_Rabbit_Fox.csproj.CoreCompileInputs.cache
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\Project_Rabbit_Fox.dll
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\refint\Project_Rabbit_Fox.dll
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\Project_Rabbit_Fox.pdb
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\Project_Rabbit_Fox.genruntimeconfig.cache
+C:\Users\Krumpli\Documents\GitHub\12_SZFT_MB_MB_VG_1_Projekt\Visual Studio\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ref\Project_Rabbit_Fox.dll

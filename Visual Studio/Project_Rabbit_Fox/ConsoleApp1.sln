@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Rabbit_Fox", "ConsoleApp1\Project_Rabbit_Fox.csproj", "{63EDC17B-A7AF-484D-9195-B5571B4BDB70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Rabbit_Fox_Lib", "Project_Rabbit_Fox_Lib\Project_Rabbit_Fox_Lib.csproj", "{692D3062-875E-4641-8A15-2C3FEF8ED47B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63EDC17B-A7AF-484D-9195-B5571B4BDB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EDC17B-A7AF-484D-9195-B5571B4BDB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EDC17B-A7AF-484D-9195-B5571B4BDB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EDC17B-A7AF-484D-9195-B5571B4BDB70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{692D3062-875E-4641-8A15-2C3FEF8ED47B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{692D3062-875E-4641-8A15-2C3FEF8ED47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{692D3062-875E-4641-8A15-2C3FEF8ED47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{692D3062-875E-4641-8A15-2C3FEF8ED47B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28AEE1D9-C319-436C-87DE-DE9063FC5181}
+	EndGlobalSection
+EndGlobal
