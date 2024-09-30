@@ -43,7 +43,7 @@ while (true)
     }
 }
 
-void TextDisplay(string title)
+static void TextDisplay(string title)
 {
     Console.SetCursorPosition((Console.WindowWidth - title.Length) / 2, Console.CursorTop);
 
