@@ -1,10 +1,13 @@
 ﻿TextDisplay("The Game of Life");
+TextDisplay("--------------------------------------------");
 Console.WriteLine();
 
 #region states
 bool onLoading = true;
 bool onMap = false;
 #endregion
+
+string[,] mapMatrix = new string[16, 20];
 
 while (true)
 {
@@ -23,7 +26,8 @@ while (true)
         {
             case ConsoleKey.D1:
                 Console.Clear();
-                //map matrix betoltese
+                onLoading = false;
+                onMap = true;
                 break;
             case ConsoleKey.D2:
                 Console.Clear();
@@ -39,6 +43,38 @@ while (true)
                 TextDisplay("The End.");
                 Environment.Exit(0);
                 break;
+        }
+    }
+
+    while (onMap)
+    {
+        MapDisplay(mapMatrix);
+    }
+}
+
+static void MapDisplay(string[,] matrix)
+{
+    for (int i = 0; i < 16; i++)
+    {
+        for (int j = 0; j < 20; j++)
+        {
+            Console.Write('.');
+        }
+        Console.WriteLine();
+    }
+}
+
+static void MapRead(string filePath, string[,] matrix)
+{
+    string[] fileLines = File.ReadAllLines(filePath);
+
+    for(int i = 0; i < 16; i++)
+    {
+        string line = fileLines[i];
+
+        for (int j = 0; j < 20; j++)
+        {
+            matrix[i, j] = ".";
         }
     }
 }
