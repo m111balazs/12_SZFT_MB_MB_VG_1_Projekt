@@ -1,5 +1,4 @@
-﻿TitleDisplay("The Game of Life")
-
+﻿TitleDisplay("The Game of Life");
 
 
 
@@ -9,5 +8,5 @@ void TitleDisplay(string title)
 
     Console.WriteLine(title);
 
-    Console.SetCursorPosition(0, Console.CursorTop)
+    Console.SetCursorPosition(0, Console.CursorTop);
 }
