@@ -1,10 +1,23 @@
-﻿TextDisplay("The Game of Life");
+﻿using The_game_of_life_Lib;
+
+TextDisplay("The Game of Life");
 TextDisplay("--------------------------------------------");
 Console.WriteLine();
 
 #region states
 bool onLoading = true;
 bool onMap = false;
+#endregion
+
+#region ConsoleSettings
+Console.CursorVisible = false;
+#endregion
+
+#region Classes
+Entities nowGeneratedEntities = new Entities(4, 6, 12);
+List<Entity> rabbitsList = nowGeneratedEntities.Rabbits;
+List<Entity> foxesList = nowGeneratedEntities.Foxes;
+List<Entity>grassesList = nowGeneratedEntities.Grasses;
 #endregion
 
 string[,] mapMatrix = new string[16, 20];
@@ -48,6 +61,7 @@ while (true)
 
     while (onMap)
     {
+        Console.SetCursorPosition(0,0);
         MapDisplay(mapMatrix);
     }
 }
@@ -77,6 +91,11 @@ static void MapRead(string filePath, string[,] matrix)
             matrix[i, j] = ".";
         }
     }
+}
+
+static void ChangeMapCharacters(List<Entity> rabbits, List<Entity> foxes, List<Entity> grasses)
+{
+    
 }
 
 static void TextDisplay(string title)

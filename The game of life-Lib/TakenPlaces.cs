@@ -15,24 +15,28 @@ namespace The_game_of_life_Lib
 
         public int RandomUntakenX()
         {
-            int value = 0;
+            int value = Random.Shared.Next(20);
 
             while (!isTakenX.Contains(value))
             {
                 value =  Random.Shared.Next(20);
             }
 
+            isTakenX.Add(value);
+
             return value;
         }
 
         public int RandomUntakenY()
         {
-            int value = 0;
+            int value = Random.Shared.Next(16);
 
             while (!isTakenY.Contains(value))
             {
                 value = Random.Shared.Next(16);
             }
+
+            isTakenY.Add(value);
 
             return value;
         }
