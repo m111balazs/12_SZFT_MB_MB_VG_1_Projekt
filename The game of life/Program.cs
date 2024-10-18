@@ -4,7 +4,13 @@ TextDisplay("The Game of Life");
 TextDisplay("--------------------------------------------");
 Console.WriteLine();
 
-#region states
+#region Constants
+const int MaxMapCol = 16;
+const int MaxMapRow = 20;
+const string MapFilePath = "map.txt";
+#endregion
+
+#region States
 bool onLoading = true;
 bool onMap = false;
 #endregion
@@ -14,13 +20,16 @@ Console.CursorVisible = false;
 #endregion
 
 #region Classes
-Entities nowGeneratedEntities = new Entities(4, 6, 12);
-List<Entity> rabbitsList = nowGeneratedEntities.Rabbits;
-List<Entity> foxesList = nowGeneratedEntities.Foxes;
-List<Entity>grassesList = nowGeneratedEntities.Grasses;
+Entities nowGeneratedEntities = new(4, 6, 12);
 #endregion
 
-string[,] mapMatrix = new string[16, 20];
+#region Lists
+List<Entity> rabbitsList = nowGeneratedEntities.Rabbits;
+List<Entity> foxesList = nowGeneratedEntities.Foxes;
+List<Entity> grassesList = nowGeneratedEntities.Grasses;
+string[,] mapMatrix = MapRead(MapFilePath, MaxMapCol, MaxMapRow);
+string[,] newMatrix = ChangeMapCharacters(rabbitsList, foxesList, grassesList, mapMatrix);
+#endregion
 
 while (true)
 {
@@ -62,8 +71,66 @@ while (true)
     while (onMap)
     {
         Console.SetCursorPosition(0,0);
-        MapDisplay(mapMatrix);
+        MapDisplay(newMatrix);
     }
+}
+
+#region Methods
+static string[,] MapRead(string filePath, int row, int col)
+{
+    string[] fileLines = File.ReadAllLines(filePath);
+
+    string[,] matrix = new string[col, row];
+
+    for (int i = 0; i < 16; i++)
+    {
+        string line = fileLines[i];
+
+        for (int j = 0; j < 20; j++)
+        {
+            matrix[i, j] = ".";
+        }
+    }
+
+    return matrix;
+}
+
+static string[,] ChangeMapCharacters(List<Entity> rabbits, List<Entity> foxes, List<Entity> grasses, string[,] matrix)
+{
+    List<List<Entity>> entities = new List<List<Entity>>();
+    entities.Add(rabbits);
+    entities.Add(foxes);
+    entities.Add(grasses);
+
+    foreach(var item in entities)
+    {
+        foreach (var entity in item)
+        {
+            switch (entity.Type)
+            {
+                case "f":
+                    matrix[entity.PositionY, entity.PositionX] = "f";
+                    break;
+                case "g":
+                    matrix[entity.PositionY, entity.PositionX] = "g";
+                    break;
+                case "r":
+                    matrix[entity.PositionY, entity.PositionX] = "r";
+                    break;
+            }
+        }
+    }
+
+    return matrix;
+}
+
+static void TextDisplay(string title)
+{
+    Console.SetCursorPosition((Console.WindowWidth - title.Length) / 2, Console.CursorTop);
+
+    Console.WriteLine(title);
+
+    Console.SetCursorPosition(0, Console.CursorTop);
 }
 
 static void MapDisplay(string[,] matrix)
@@ -77,32 +144,4 @@ static void MapDisplay(string[,] matrix)
         Console.WriteLine();
     }
 }
-
-static void MapRead(string filePath, string[,] matrix)
-{
-    string[] fileLines = File.ReadAllLines(filePath);
-
-    for(int i = 0; i < 16; i++)
-    {
-        string line = fileLines[i];
-
-        for (int j = 0; j < 20; j++)
-        {
-            matrix[i, j] = ".";
-        }
-    }
-}
-
-static void ChangeMapCharacters(List<Entity> rabbits, List<Entity> foxes, List<Entity> grasses)
-{
-    
-}
-
-static void TextDisplay(string title)
-{
-    Console.SetCursorPosition((Console.WindowWidth - title.Length) / 2, Console.CursorTop);
-
-    Console.WriteLine(title);
-
-    Console.SetCursorPosition(0, Console.CursorTop);
-}
+#endregion
