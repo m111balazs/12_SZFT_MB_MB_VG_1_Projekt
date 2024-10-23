@@ -28,14 +28,14 @@
                 }
             }
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 6; i++)
             {
                 int x = random.Next(Szelesseg);
                 int y = random.Next(Magassag);
                 nyulak.Add(new Nyul(x, y));
             }
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 int x = random.Next(Szelesseg);
                 int y = random.Next(Magassag);
@@ -329,7 +329,37 @@
             {
                 for (int y = 0; y < Magassag; y++)
                 {
-                    Console.Write(MezoKiiras[x, y] + "  ");
+                    switch (MezoKiiras[x, y])
+                    {
+                        case 'N':
+                            Console.BackgroundColor = ConsoleColor.Blue;
+                            Console.Write(MezoKiiras[x, y] + "  ");
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            break;
+                        case 'R':
+                            Console.BackgroundColor = ConsoleColor.Red;
+                            Console.Write(MezoKiiras[x, y] + "  ");
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            break;
+                        case '_':
+                            Console.BackgroundColor = ConsoleColor.DarkYellow;
+                            Console.Write(MezoKiiras[x, y] + "  ");
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            break;
+                        case 'g':
+                            Console.BackgroundColor = ConsoleColor.Green;
+                            Console.Write(MezoKiiras[x, y] + "  ");
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            break;
+                        case 'G':
+                            Console.BackgroundColor = ConsoleColor.DarkGreen;
+                            Console.Write(MezoKiiras[x, y] + "  ");
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            break;
+                        default:
+                            Console.Write(MezoKiiras[x, y] + "  ");
+                            break;
+                    }
                 }
                 Console.WriteLine();
             }
