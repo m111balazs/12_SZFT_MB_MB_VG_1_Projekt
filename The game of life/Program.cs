@@ -50,7 +50,7 @@ while (true)
             start = false;
             Console.Clear();
             mezo.SzovegKiiro("TUTORIAL:");
-            Console.WriteLine("1. In game the Grass has 3 condition (initiative, tender, grown up)\n2. We have two animals in the game: rabbits and foxes");// alapveto "hasznalati utasitas" a felhasznalo szamara
+            Console.WriteLine("1. In game the Grass has 3 condition (initiative, tender, grown up)\n2. We have two animals in the game: rabbits and foxes\n3. Foxes are eating the Rabbits, when they reach them.\n4. Rabbits are eating the grass.");// alapveto "hasznalati utasitas" a felhasznalo szamara
             Console.WriteLine("Press ESC to exit to the main menu");
             Console.ReadKey(true);
             Console.Clear();
